@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		526687F72356F96500F53D63 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526687F62356F96500F53D63 /* Alert.swift */; };
 		527B2EA523254E5000B480A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B2EA423254E5000B480A2 /* AppDelegate.swift */; };
 		527B2EA723254E5000B480A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B2EA623254E5000B480A2 /* ViewController.swift */; };
 		527B2EAA23254E5000B480A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527B2EA823254E5000B480A2 /* Main.storyboard */; };
 		527B2EAC23254E5200B480A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527B2EAB23254E5200B480A2 /* Assets.xcassets */; };
 		527B2EAF23254E5200B480A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527B2EAD23254E5200B480A2 /* LaunchScreen.storyboard */; };
 		527B2EB72325511700B480A2 /* RateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B2EB62325511700B480A2 /* RateTableViewCell.swift */; };
+		52DB3D8E235317370001241E /* ConvertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB3D8D235317370001241E /* ConvertTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		526687F62356F96500F53D63 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		527B2EA123254E5000B480A2 /* MMK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		527B2EA423254E5000B480A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		527B2EA623254E5000B480A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		527B2EAE23254E5200B480A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		527B2EB023254E5200B480A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527B2EB62325511700B480A2 /* RateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableViewCell.swift; sourceTree = "<group>"; };
+		52DB3D8D235317370001241E /* ConvertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		526687F52356F95100F53D63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				526687F62356F96500F53D63 /* Alert.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		526687F923570B8000F53D63 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				527B2EA623254E5000B480A2 /* ViewController.swift */,
+				52DB3D8D235317370001241E /* ConvertTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		526687FA23570B9C00F53D63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				527B2EA823254E5000B480A2 /* Main.storyboard */,
+				527B2EAD23254E5200B480A2 /* LaunchScreen.storyboard */,
+				527B2EB62325511700B480A2 /* RateTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		527B2E9823254E5000B480A2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +87,11 @@
 		527B2EA323254E5000B480A2 /* MMK */ = {
 			isa = PBXGroup;
 			children = (
+				526687FA23570B9C00F53D63 /* Views */,
+				526687F923570B8000F53D63 /* Controllers */,
+				526687F52356F95100F53D63 /* Models */,
 				527B2EA423254E5000B480A2 /* AppDelegate.swift */,
-				527B2EA623254E5000B480A2 /* ViewController.swift */,
-				527B2EB62325511700B480A2 /* RateTableViewCell.swift */,
-				527B2EA823254E5000B480A2 /* Main.storyboard */,
 				527B2EAB23254E5200B480A2 /* Assets.xcassets */,
-				527B2EAD23254E5200B480A2 /* LaunchScreen.storyboard */,
 				527B2EB023254E5200B480A2 /* Info.plist */,
 			);
 			path = MMK;
@@ -140,6 +170,8 @@
 			files = (
 				527B2EA723254E5000B480A2 /* ViewController.swift in Sources */,
 				527B2EA523254E5000B480A2 /* AppDelegate.swift in Sources */,
+				52DB3D8E235317370001241E /* ConvertTableViewController.swift in Sources */,
+				526687F72356F96500F53D63 /* Alert.swift in Sources */,
 				527B2EB72325511700B480A2 /* RateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZ58662R7A;
 				INFOPLIST_FILE = MMK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZ58662R7A;
 				INFOPLIST_FILE = MMK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
